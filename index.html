@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -30,23 +35,31 @@
         <div class="header">
             <div class="user-nav">
                 <div class="search-bar">
-                    <a href="#"><img src="images/icon/magnify.svg" alt="Search"></a>
-                    <input type="text" name="search" id="search">
+                    <form action="#" method="get">
+                        <label for="search">
+                            <input class="btn" type="submit" value="Search">
+                            <img src="images/icon/magnify.svg" alt="Search">
+                        </label>
+                        <input type="text" name="search" id="search">
+                    </form>
                 </div>
+
                 <div class="user-profile">
                     <img src="images/icon/bell-ring-outline.svg" alt="Notification">
-                    <img src="images/avatar/cannon-man_272076.png" alt="User Profile">
+                    <span class="avatar"><img src="images/avatar/cannon-man_272076.png" alt="User Profile"></span>
                     <h3>Morgan Oakley</h3>
                 </div>
             </div>
+
             <div class="post">
                 <div class="welcome-bar">
                     <img src="images/avatar/cannon-man_272076.png" alt="User Profile">
                     <div class="greetings">
                         <p>Hi there,</p>
-                        <h2>Morgan Oakley</h2>
+                        <h2>Morgan Oakley (@morgan)</h2>
                     </div>
                 </div>
+                
                 <div class="post-nav">
                     <button type="button">New</button>
                     <button type="button">Upload</button>
