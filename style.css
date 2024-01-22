@@ -71,12 +71,16 @@ li a {
     padding: 1rem 3rem;
     grid-column: 2 / 3;
     box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0px;
+    background-color: rgb(255, 255, 255);;
 }
 
 .user-nav {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
+    align-items: center;
 }
 
 img {
@@ -86,12 +90,26 @@ img {
     vertical-align: middle;
 }
 
+label {
+    cursor: pointer;
+}
+
 label .btn {
     display: none;
 }
 
 #search {
     margin-left: .5rem;
+    border-radius: 10px;
+    border-style: none;
+    background-color: var(--main-content-bg-color);
+    height: 1.5rem;
+    width: 34rem;
+}
+
+#search:focus {
+    outline: none;
+    padding-left: .5rem;
 }
 
 .user-profile {
@@ -99,6 +117,10 @@ label .btn {
     justify-content: space-between;
     align-items: center;
     gap: 1.5rem;
+}
+
+.user-profile > img {
+    cursor: pointer;
 }
 
 .user-profile > h3 {
@@ -151,8 +173,13 @@ label .btn {
 
 .post-nav button {
     width: 5rem;
-    padding: .4rem 1.2rem;
+    padding: .5rem 1.2rem;
     border-radius: 50px;
+    background-color: var(--blue-bg-color);
+    color: rgb(255, 255, 255);
+    border-style: none;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 .main-content {
